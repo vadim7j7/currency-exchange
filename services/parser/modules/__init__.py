@@ -41,4 +41,10 @@ DATA_INFO = {
         'module': 'services.parser.modules.otpbank.Otpbank',
         'url': 'https://www.otpbank.ru/retail/currency/'
     },
+    'akbars': {
+        'id': 'akbars',
+        'name': 'Ак Барс',
+        'module': 'services.parser.modules.akbars.Akbars',
+        'url': 'https://www.akbars.ru/product/api/currency/bestrates?cityFiasRef=93b3df57-4c89-44df-ac42-96f05e9cd3b9'
+    },
 }
