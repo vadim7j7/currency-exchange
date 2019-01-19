@@ -34,5 +34,11 @@ DATA_INFO = {
         'name': 'Банк ВТБ',
         'module': 'services.parser.modules.vtb.Vtb',
         'url': 'https://www.vtb.ru/api/currency-exchange/footer-info?contextItemId=%7BCEA5D9F8-7AF3-4706-B827-A2C1079F3B59%7D'
-    }
+    },
+    'otpbank': {
+        'id': 'otpbank',
+        'name': 'ОТП Банк',
+        'module': 'services.parser.modules.otpbank.Otpbank',
+        'url': 'https://www.otpbank.ru/retail/currency/'
+    },
 }

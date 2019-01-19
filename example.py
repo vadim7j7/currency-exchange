@@ -7,6 +7,7 @@ parser = Parser([
     {'id': 'rshb'},
     {'id': 'raiffeisen'},
     {'id': 'vtb'},
+    {'id': 'otpbank'},
 ])
 
 parser.run()
