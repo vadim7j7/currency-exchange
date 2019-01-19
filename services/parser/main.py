@@ -10,16 +10,11 @@ class Parser(object):
         self.__result = []
         self.__q = asyncio.Queue(queues)
 
-    def run(self):
-        loop = asyncio.get_event_loop()
-        loop.run_until_complete(self.__start())
-        loop.close()
-
     @property
     def result(self):
         return self.__result
 
-    async def __start(self):
+    async def start(self):
         consumer = asyncio.ensure_future(self.__consumer())
 
         await self.__producer()

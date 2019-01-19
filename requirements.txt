@@ -1,3 +1,4 @@
 asyncio
+asyncpg
 aiohttp
 beautifulsoup4
