@@ -1,12 +1,12 @@
 create table current_currencies
 (
-  id             serial     not null,
-  bank_id        integer    not null
+  id      serial      not null,
+  bank_id integer     not null
     constraint current_currencies_banks_id_fk
     references banks (id)
     on delete cascade,
-  code  varchar(20) not null,
-  value numeric
+  code    varchar(20) not null,
+  value   numeric(5, 3)
 );
 
 create unique index current_currencies_id_uindex
